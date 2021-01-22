@@ -8,7 +8,7 @@ let result = []
 for (let i = 0; i < input.length; i++) {
     let x = Number(input[i])
     // console.log(x)
-    if (x < 2) {
+    if (x <= 2) {
         test = false;
     }
     else {
