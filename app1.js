@@ -12,14 +12,18 @@ for (let i = 0; i < input.length; i++) {
         test = false;
     }
     else {
-        for (var j = 2; j <= x - 1; j++) {
-            if (x % j == 0) {
-                test = false;
-                break;
-            } else {
-                test = true
+        if (x == 2) {
+            test = true
+        } else {
+            for (var j = 2; j <= x - 1; j++) {
+                if (x % j == 0) {
+                    test = false;
+                    break;
+                } else {
+                    test = true
+                }
+                // console.log(x + ' ' + j + ' ' + test);
             }
-            // console.log(x + ' ' + j + ' ' + test);
         }
         // console.log(x + ' ' + test);
     }
